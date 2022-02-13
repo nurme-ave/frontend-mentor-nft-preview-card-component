@@ -87,6 +87,7 @@ body {
 
 .svg-eth-icon, .svg-clock-icon {
   display: flex;
+  align-items: center;
 }
 
 .svg-eth-icon-text {
