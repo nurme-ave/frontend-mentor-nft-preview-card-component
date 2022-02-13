@@ -120,8 +120,11 @@ body {
 
 /* Frontend Mentor Attribution */
 .attribution { 
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
   font-size: 11px; text-align: center;
-  padding-top: 50px;
   color: var(--white); 
   opacity: 0.7;
 }
