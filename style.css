@@ -83,6 +83,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
+  line-height: 20px;
 }
 
 .svg-eth-icon, .svg-clock-icon {
