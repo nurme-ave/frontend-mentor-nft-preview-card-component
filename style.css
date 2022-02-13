@@ -18,6 +18,7 @@
 body {
   font-family: 'Outfit', sans-serif;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 .section-container {
@@ -34,12 +35,22 @@ body {
   padding: 24px;
   border-radius: 8px;
   background-color: var(--card-background);
-  opacity: 0.9;
 }
 
-.image {
-  width: 100%;
+.card-image {
+  background: url('images/image-equilibrium.jpg') center/cover;
+  width: 302px;
+  height: 302px;
   border-radius: 8px;
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
 .main-heading {
@@ -110,3 +121,27 @@ body {
   color: hsl(228, 45%, 44%); 
 }
 
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1440px) {
+  .card-container {
+    width: 350px;
+    height: 596px;
+  }
+
+  .main-heading:hover, .author-name:hover {
+    color: var(--eth-text);
+    cursor: pointer;
+  }
+
+  .card-image:hover {
+    background: hsl(178, 100%, 50%);
+    opacity: 0.5;
+  }
+  
+  .card-image:hover > .eye-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
