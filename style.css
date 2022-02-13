@@ -1,8 +1,23 @@
 /* General */
+
+:root {
+  --main-background: hsl(217, 54%, 11%);
+  --card-background: hsl(216, 50%, 16%);
+  --white: hsl(0, 0%, 100%);
+  --main-text: hsl(215, 51%, 70%);
+  --eth-text: hsl(178, 100%, 50%);
+  --line: hsla(216, 32%, 27%, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
 }
 
 .section-container {
@@ -11,12 +26,84 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #F2F2F2;
+  padding: 0 24px;
+  background-color: var(--main-background);
 }
+
+.card-container {
+  padding: 24px;
+  border-radius: 8px;
+  background-color: var(--card-background);
+  opacity: 0.9;
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.main-heading {
+  color: var(--white);
+  padding-top: 22px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.main-text {
+  color: var(--main-text);
+  padding-top: 12px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.eth-days-left-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  font-size: 15px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eth, .days-left {
+  display: flex;
+}
+
+.eth-text, .days-left-text {
+  padding-left: 7px;
+  font-weight: 400;
+}
+
+.eth-text {
+  color: var(--eth-text);
+}
+
+.days-left-text {
+  color: var(--main-text);
+}
+
+.creation-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.creation-author-text {
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--main-text)
+}
+
+.author-name {
+  color: var(--white);
+}
+
 
 /* Frontend Mentor Attribution */
 .attribution { 
-  font-size: 11px; text-align: center; 
+  font-size: 11px; text-align: center;
 }
 
 .attribution a { 
